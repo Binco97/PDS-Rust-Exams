@@ -12,7 +12,7 @@ Potrete dunque fare una pull request con il vostro contributo.
 Per favore, prima di modificare risposte contenenti codice, controllate che la vostra soluzione compili ed esegua in modo corretto.
 
 ## Lista Temi d'esame Rust
- - [esempio domande esame caricato dal prof Savino su piattaforma exercism]()
+ - [esempio domande esame caricato dal prof Savino su piattaforma exercism](./simulazione_exercise_savino.md)
 
 
 
