@@ -4,7 +4,7 @@ Una raccolta dei temi d'esame rigardanti la parte API programming in Rust del co
 ## Come contribuire:
 - Se un appello **non è presente** nella raccolta e vuoi aggiungerlo, puoi creare il corrispondente file markdown chiamato "dd_mm_aaaa.md" 
 ESEMPIO: Se voglio aggiungere il mio svolgimento dell'appello avvenuto in data 20 giugno 2022 nominerò il file `20_06_2022.md`
-Il file dovrà essere organizzato secondo il template: [Template](TOLINK)
+Il file dovrà essere organizzato secondo il template: [Template](./Template.md)
 Potrete dunque fare una pull request con il vostro contributo.
 
 - Se volete correggere/modificare una risposta o una domanda, potete semplicemente modificare il file ed eseguire una pull request.
