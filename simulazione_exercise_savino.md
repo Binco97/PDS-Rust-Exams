@@ -6,8 +6,8 @@ Domande forniteci dal prof Savino tramite piattaforma exercise come esempio di c
 - **Q1**: "Si scriva un programma in cui una funzione generica (_generateVector_ da scrivere a sua volta) generi un vettore accettando in ingresso il numero di elementi, facendo in modo che il programma principale ne usi il risultato per stamparlo a video, minimizzando il contributo di memoria usata."
 - **Risposta**:
 ```Rust
-fn generate_vector<T : Default>(n: usize) -> Vec<T> {
-    (0..n).map(|_| T::default()).collect()
+fn generateVector<T : Default + Clone>(n: usize) -> Vec<T> {
+    vec![T::default(); n]
 }
 
 fn main() {
