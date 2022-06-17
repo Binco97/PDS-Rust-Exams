@@ -6,22 +6,17 @@ Domande forniteci dal prof Savino tramite piattaforma exercise come esempio di c
 - **Q1**: "Si scriva un programma in cui una funzione generica (_generateVector_ da scrivere a sua volta) generi un vettore accettando in ingresso il numero di elementi, facendo in modo che il programma principale ne usi il risultato per stamparlo a video, minimizzando il contributo di memoria usata."
 - **Risposta**:
 ```Rust
-fn generateVector<T : Default>(n: usize) -> Vec<T> {
-    let mut v = Vec::new();
-    for _ in 0..n {
-        v.push(T::default());
-    }
-    v
+fn generate_vector<T : Default>(n: usize) -> Vec<T> {
+    (0..n).map(|_| T::default()).collect()
 }
 
 fn main() {
-
-    let vS: Vec<String> = generateVector(10);
-    let vI: Vec<i32> = generateVector(10);
-    let vF: Vec<f64> = generateVector(10);
-    println!("{:?}",vS);    // ["", "", "", "", "", "", "", "", "", ""]
-    println!("{:?}",vI);    // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    println!("{:?}",vF);    // [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    let strings: Vec<String> = generate_vector(10);
+    let integers: Vec<i32> = generate_vector(10);
+    let floats: Vec<f64> = generate_vector(10);
+    println!("{:?}", strings);    // ["", "", "", "", "", "", "", "", "", ""]
+    println!("{:?}", integers);    // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    println!("{:?}", floats);    // [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 }
 ```
 
