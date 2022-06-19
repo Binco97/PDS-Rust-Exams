@@ -254,13 +254,16 @@ fn main () {
     - conteggio dei riferimenti
     - Accesso esclusivo con attesa
     - ecc...
+    
   In C++ gli smart ponter disponibili sono:
     - `std::shared_ptr<T>`
     - `std::unique_ptr<T>`
     - `std::weak_ptr<T>`
+
   In Rust sono:
     - `Box<T>, Rc<T>, Arc<T>, Weak<T>`
     - `Cell<T>, RefCell<T>, Cow<T>, Mutex<T>, RwLock<T>`
+    
 In C++ un throw lancia una exception e risale lo stack fino a trovare un blocco catch che fa riferimento al suo tipo di errore. In rust viene invocata la macro panic! poichè non esiste il concetto di exception.
 in entrambi i cai con l'unroll dello stack vengono eseguiti i distruttori degli smart pointer man mano che vengono rilasciati (?? non so cosa vuole sta domanda)
 
