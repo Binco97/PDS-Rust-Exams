@@ -13,6 +13,7 @@ Per favore, prima di modificare risposte contenenti codice, controllate che la v
 
 ## Lista Temi d'esame Rust
  - [esempio domande esame caricato dal prof Savino su piattaforma exercism](./simulazione_exercise_savino.md)
+ - [primo appello 20/06/2022](./20_06_2022.md)
 
 
 
